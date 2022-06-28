@@ -1,0 +1,23 @@
+.navbar_container{
+    display         : flex;
+    justify-content : space-between;
+    color           : white;
+}
+
+.navbar_container_left-items{
+    display         : flex;
+    justify-content : space-evenly;
+    align-items     : center;
+}
+.navbar_container_items-wrapper-options{
+   list-style   : none;
+   margin-top   : 4%;
+}
+.navbar_container_items-wrapper-options li{
+    display     : inline;
+    margin      : 5px;
+    white-space : nowrap;
+ }
+.navbar_container_left-items-input{
+    height  : 30px;
+}
