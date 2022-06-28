@@ -1,0 +1,23 @@
+.list_header_container{
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    flex-direction  : column;
+    border          : 0.5px solid #111;
+    border-radius   : 5px;
+    margin          : 15px auto;
+    width           : 70vw;
+    padding         : 25px;
+}
+
+.card_container{
+    border          : 0.5px solid #111;
+    border-radius   : 5px;
+    margin          : 15px auto;
+    width           : 70vw;
+    padding         : 25px;
+}
+
+h4{
+    margin-top: 5px;
+}

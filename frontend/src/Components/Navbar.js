@@ -14,11 +14,11 @@ const CustomNavbar = () => {
     >
       <div className='navbar_container_left-items'>
         <NavbarBrand>
-          <VscGithubInverted />
+          <VscGithubInverted style={{fontSize : '25px'}}/>
         </NavbarBrand>
         <Input placeholder='search' className='navbar_container_left-items-input'/>
         <div className='navbar_container_items-wrapper'>
-          <ul className='navbar_container_items-wrapper-options'>
+          <ul className='navbar_container_items-wrapper-options-left'>
             <li>Pull request</li>
             <li>Marketplace</li>
             <li>Issues</li>
@@ -28,7 +28,7 @@ const CustomNavbar = () => {
       </div>
       <div className='navbar_container_right-items'>
         <div className='navbar_container_items-wrapper'>
-          <ul className='navbar_container_items-wrapper-options'>
+          <ul className='navbar_container_items-wrapper-options-right'>
             <li>
                 <BsFillBellFill />
             </li>

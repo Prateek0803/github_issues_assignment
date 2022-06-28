@@ -1,0 +1,38 @@
+.issues_nav_repo-wrapper{
+    display         : flex;
+    justify-content : space-between;
+}
+
+.issues_nav_repo-badges{
+    display         : flex;
+    justify-content : space-evenly;
+}
+
+.issues_nav_repo-title{
+    display         : flex;
+}
+
+.issues_nav_repo-title-wrapper{
+    display     : flex;
+    text-align  : center;
+    margin      : 0 1%;
+}
+
+.issues_badge{
+    color       :  black; 
+    border      : 0.5px solid black;
+    margin      : 0 4px;
+    font-size   : 12px;
+    padding     : 6px;
+    font-weight : 400;
+}
+
+.issues_nav_title{
+    display : flex;
+    margin  : 0 5px;
+}
+.inactive{
+    color           : #111;
+    text-decoration : none;
+    margin          : 0 5px;
+}
