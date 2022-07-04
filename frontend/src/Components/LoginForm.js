@@ -32,7 +32,6 @@ const LoginForm = () => {
     <div className='login_form_container'>
         <h3>Sign in to Github</h3>
         <form className='login_card'>
-          <label>Email</label>
             <input 
                 type='email'
                 placeholder='Enter your mail'
@@ -41,7 +40,6 @@ const LoginForm = () => {
                 value={email}
                 onChange = {(e) => setEmail(e.target.value)}
             />
-            <label>Password</label>
              <input 
                 type='password'
                 placeholder='Enter your password'
@@ -50,8 +48,8 @@ const LoginForm = () => {
                 value={password}
                 onChange = {(e) => setPassword(e.target.value)}
             />
-            <Button type='submit' onClick={(e) => formSubmit(e)} className='login_button'>Login</Button>
-            <p>New user? <Link to ="/register">Register here</Link></p>
+            <Button style={{marginTop : '1rem'}} type='submit' onClick={(e) => formSubmit(e)} className='login_button'>Login</Button>
+            <p style={{marginTop : '0.5rem'}}>New user? <Link to ="/register" style={{color : 'lightblue', textDecoration : 'none'}}>Register here</Link></p>
             {
               response === true && <Navigate replace to ="/" />
             }

@@ -56,7 +56,6 @@ exports.getLabelData = async(req,res) =>{
 exports.getAssigneesData = async(req,res) =>{
     try {
         let allData = await axios.get(ASSIGNES_URL)
-        console.log(allData)
         let assignees = []
             allData.data.map((data) =>{
                 assignees.push(data.login)

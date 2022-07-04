@@ -6,17 +6,15 @@ import ListCards                                from './List_Cards/ListCards'
 const Home = () => {
   const [allData,setAllData]            = useState([])
   const [openData,setOpenData]          = useState([])
-  const [closeData,setCloseData]        = useState([])
   const [labels,setLables]              = useState([])
   const [assignees,setAssignees]        = useState([])
-  const [issues,setIssues]              = useState([])
+
     
   useEffect(() =>{
       let issues_data = getAll()
       issues_data.then((data) => {
         setAllData(data.data)
         setOpenData(data.data)
-        setCloseData(data.data)
       })
       .catch((err) => console.log(err))
       
@@ -62,7 +60,6 @@ const onFilterChange = (event,action) =>{
         return allData
       case 'assignee' :
           let result = openData.filter((element) => element.assignee?.map((assign) => assign.login === value))
-
           setAllData(result)
           return allData
       default:
@@ -85,12 +82,12 @@ const onFilterChange = (event,action) =>{
       <Navbar />
       <Issues_Nav />
       <ListCards 
-        allData = {allData} 
-        labels = {labels} 
-        assignees = {assignees}
-        onLabels = {onLabels}
-        onFilterChange = {onFilterChange}
-        handleFilter = {handleFilter} 
+        allData         = {allData} 
+        labels          = {labels} 
+        assignees       = {assignees}
+        onLabels        = {onLabels}
+        onFilterChange  = {onFilterChange}
+        handleFilter    = {handleFilter} 
         />
     </div>
   )

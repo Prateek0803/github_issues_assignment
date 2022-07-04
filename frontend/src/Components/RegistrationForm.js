@@ -32,7 +32,6 @@ const RegistrationForm = () => {
     <div className='registration_form_container'>
             <h3>Register to Github</h3>
         <form className='registration_card'>
-            <label>Email</label>
             <input 
                 type='email'
                 placeholder='Enter your mail'
@@ -41,7 +40,6 @@ const RegistrationForm = () => {
                 value={email}
                 onChange = {(e)=> setEmail(e.target.value)}
             />
-            <label>Username</label>
              <input 
                 type='username'
                 placeholder='Enter your name'
@@ -50,7 +48,6 @@ const RegistrationForm = () => {
                 value={name}
                 onChange = {(e)=> setName(e.target.value)}
             />
-            <label>Password</label>
              <input 
                 type='password'
                 placeholder='Create your password'
@@ -59,7 +56,7 @@ const RegistrationForm = () => {
                 value={password}
                 onChange = {(e)=> setPassword(e.target.value)}
             />
-            <Button type='submit' onClick={(e) => formOnSubmit(e)} className='register_button'>Register</Button>
+            <Button style={{marginTop : '1rem'}} type='submit' onClick={(e) => formOnSubmit(e)} className='register_button'>Register</Button>
             {registered === true && <Navigate to="/login" />}
         </form>
     </div>

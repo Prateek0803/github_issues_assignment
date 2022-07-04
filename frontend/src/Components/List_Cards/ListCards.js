@@ -8,12 +8,12 @@ const ListCards = ({allData, labels, handleFilter, assignees, onFilterChange, on
     <div>
       <ListHeaderCard />
       <Card 
-        allData = {allData} 
-        labels = {labels}
-        assignees = {assignees} 
-        onLabels = {onLabels} 
-        onFilterChange = {onFilterChange}
-        handleFilter = {handleFilter}
+        allData         = {allData} 
+        labels          = {labels}
+        assignees       = {assignees} 
+        onLabels        = {onLabels} 
+        onFilterChange  = {onFilterChange}
+        handleFilter    = {handleFilter}
         />
     </div>
   )

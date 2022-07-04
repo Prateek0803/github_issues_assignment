@@ -29,22 +29,22 @@ const Issues_Nav = () => {
             <div className='issues_nav_repo-badges'>
                 <div className='issues_nav_repo_badges-list'>
                         <Badge pill color='light' className='issues_badge'>
-                            <AiOutlineHeart />Sponsor
+                            <AiOutlineHeart style={{margin : '0px 2px 2px 2px'}} /><span>Sponsor</span>
                         </Badge>
                 </div>
                 <div className='issues_nav_repo_badges-list'>
                     <Badge pill color='light' className='issues_badge'>
-                        <BsEye />Watch
+                        <BsEye style={{margin : '0px 2px 2px 2px'}} /><span>Watch</span>
                     </Badge>
                 </div>
                 <div className='issues_nav_repo_badges-list'>
                     <Badge pill color='light' className='issues_badge'>
-                        <VscRepoForked />Fork
+                        <VscRepoForked style={{margin : '0px 2px 2px 2px'}}/><span>Fork</span>
                     </Badge>
                 </div>
                 <div className='issues_nav_repo_badges-list'>
                     <Badge pill color='light' className='issues_badge'>
-                        <BsStar />Star
+                        <BsStar style={{margin : '0px 2px 2px 2px'}} /><span>Star</span>
                     </Badge>
                 </div>
             </div>
