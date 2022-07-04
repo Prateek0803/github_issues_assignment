@@ -1,14 +1,17 @@
-import React      from 'react';
-import Issues_Nav from './Components/Issues_Nav';
-import ListCards  from './Components/List_Cards/ListCards';
-import Navbar     from './Components/Navbar';
+import React            from 'react';
+import { Route,Routes } from 'react-router-dom';
+import Home             from './Components/Home';
+import LoginForm        from './Components/LoginForm';
+import RegistrationForm from './Components/RegistrationForm';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Issues_Nav />
-      <ListCards />
+      <Routes>
+        <Route path='/'           element = { <Home />} />
+        <Route path='/login'      element = {<LoginForm />} />
+        <Route path='/register'   element = { <RegistrationForm />} />
+      </Routes>
     </div>
   );
 }

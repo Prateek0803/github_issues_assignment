@@ -6,6 +6,7 @@
 .issues_nav_repo-badges{
     display         : flex;
     justify-content : space-evenly;
+    margin-top      : 5px;
 }
 
 .issues_nav_repo-title{
@@ -16,6 +17,7 @@
     display     : flex;
     text-align  : center;
     margin      : 0 1%;
+    margin-top  : 5px;
 }
 
 .issues_badge{
@@ -28,8 +30,9 @@
 }
 
 .issues_nav_title{
-    display : flex;
-    margin  : 0 5px;
+    display     : flex;
+    margin      : 0 5px;
+    margin-left : 18px;
 }
 .inactive{
     color           : #111;

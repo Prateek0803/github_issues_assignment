@@ -8,6 +8,7 @@
     margin          : 15px auto;
     width           : 70vw;
     padding         : 25px;
+    box-shadow      : 1px 1px 1px black;
 }
 
 .card_container{
@@ -16,6 +17,7 @@
     margin          : 15px auto;
     width           : 70vw;
     padding         : 25px;
+    box-shadow      : 1px 1px 1px black;
 }
 
 h4{
